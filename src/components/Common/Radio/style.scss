@@ -1,0 +1,13 @@
+@import '../../../stylesheet/common';
+
+.ant-radio-checked .ant-radio-inner, .ant-radio-wrapper:hover .ant-radio .ant-radio-inner, .ant-radio:hover .ant-radio-inner {
+  border-color: $defaultColor;
+}
+
+.ant-radio-checked:after {
+  border-color: $defaultColor;
+}
+
+.ant-radio-inner:after {
+  background-color: $defaultColor;
+}

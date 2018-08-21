@@ -1,0 +1,203 @@
+
+ @import '../../stylesheet/common.scss';
+ .item-detail-content{
+     padding: 15px 30px;
+     min-height: 300px;
+     background: #fff;
+     position: relative;
+     margin-top: 80px;
+     .persional-bread{
+         position: absolute;
+         left: 0;
+         top: -60px;
+         .title-bread > span{
+             display: inline-block;
+             max-width: 155px;
+             white-space: nowrap;
+             overflow: hidden;
+             text-overflow: ellipsis;
+             vertical-align: bottom;
+         }
+     }
+     .basic-info{
+         margin-bottom: 60px;
+         display: flex;
+         flex-flow: row nowrap;
+         align-items: flex-start;
+         justify-content: flex-start;
+         .images{
+             display: flex;
+             align-items: center;
+             justify-content: space-between;
+             width: 570px;
+             min-width: 570px;
+             height: 474px;
+            //  height: 100%;
+             .big-img{
+                 width: 474px;
+                 height: 100%;
+                 background-size: 100% 100%;
+             }
+             .sm-img-list{
+                 width: 86px;
+                 height: 100%;
+                 .sm-img{
+                     display: inline-block;
+                     width: 85px;
+                     height: 85px;
+                     border: 1px solid #fff;
+                     margin-top: 11px;
+                     &:first-child{
+                         margin: 0;
+                     }
+                     &.active{
+                         border-color: $activeColor;
+                     }
+                 }
+             }
+         }
+         .item-info{
+             width: 100%;
+             padding-left: 60px;
+             .item-title{
+                 display: inline-block;
+                 max-width: 520px;
+                 overflow: hidden;
+                 text-overflow: ellipsis;
+                 white-space: nowrap;
+                 font-size: 20px;
+                 line-height: 28px;
+                 color: #333;
+                 font-weight: 600;
+             }
+             .price-info{
+                 background-color: #f8f8f8;
+                 padding: 0 15px;
+                 margin-bottom: 20px;
+                 .price-line{
+                     height: 50px;
+                     display: flex;
+                     flex-flow: row nowrap;
+                     align-items: center;
+                     justify-content: flex-start;
+                     span{
+                         font-size: 14px;
+                         line-height: 20px;
+                        &.underline{
+                            text-decoration: line-through;
+                        }
+                     }
+                     .title{
+                         width: 62px;
+                         min-width: 62px;
+                         color: #aaa;
+                     }
+                     &.new-price{
+                         .price{
+                             font-size: 30px;
+                             line-height: 42px;
+                             color: $defaultColor;
+                         }
+                     }
+                     &.other-info{
+                         border-top: 1px dashed #ddd;
+                     }
+                 }
+             }
+             .att-info{
+                 .att-line{
+                     display: flex;
+                     flex-flow: row nowrap;
+                     align-items: flex-start;
+                     justify-content: flex-start;
+                     padding-left: 15px;
+                     .title{
+                        width: 62px;
+                        min-width: 62px;
+                        font-size: 14px;
+                        line-height: 20px;
+                        color: #aaa;
+                        align-self: left;
+                        padding: 5px 0;
+                     }
+                     .att-items{
+                         width: 100%;
+                         display: flex;
+                         flex-flow: row wrap;
+                         .att-item{
+                             display: inline-block;
+                             margin: 0 10px 20px 0;
+                             font-size: 14px;
+                             line-height: 20px;
+                             padding: 5px 30px;
+                             border: 1px solid #ddd;
+                             color: #333;
+                            cursor: pointer;
+                             &.selected, &:hover{
+                                 border-color: $activeColor;
+                                 color: $activeColor;
+                             }
+                             &.disabled{
+                                 border: 1px dashed #DDD;
+                                 color: #ddd;
+                                 cursor: not-allowed;
+                             }
+                         }
+                     }
+                 }
+             }
+             .count-line{
+                 padding-left: 15px;
+                 display: flex;
+                 flex-flow: row nowrap;
+                 .title{
+                    width: 62px;
+                    min-width: 62px;
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: #aaa;
+                    align-self: left;
+                    padding: 5px 0;
+                 }
+                 .count-content{
+                     font-size: 12px;
+                     line-height: 17px;
+                     color: #333;
+                     align-self: flex-end;
+                 }
+             }
+             .btn-lines{
+                 margin-top: 50px;
+                 button{
+                     width: 180px;
+                     height: 50px;
+                     span{
+                         font-size: 18px;
+                         line-height: 25px;
+                     }
+                     &:first-child, &:first-child:hover{
+                         color: $defaultColor;
+                         border-color: $defaultColor;
+                         background-color: #ffede5;
+                         margin-right: 10px;
+                     }
+                 }
+             }
+         }
+         .item-detail{
+             margin-top:50px;
+             margin-bottom: 30px;
+             .title{
+                 font-size: 14px;
+                 line-height: 20px;
+                 padding: 10px 0;
+                 font-weight: 600;
+                 border-bottom: 2px solid #ddd;
+             }
+         }
+     }
+ }
+
+
+
+

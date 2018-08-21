@@ -1,0 +1,24 @@
+/* use css to set position of modal */
+.tips-cell-dialog {
+  text-align: center;
+  white-space: nowrap;
+  .ant-modal-body{
+    text-align: center;
+    font-size: 14px;
+  }
+}
+
+.tips-cell-dialog:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  width: 0;
+}
+
+.tips-cell-dialog .ant-modal {
+  display: inline-block;
+  vertical-align: middle;
+  top: 0;
+  text-align: left;
+}

@@ -1,0 +1,89 @@
+.inputplus-control-wrapper {
+  display: inline-table;
+  vertical-align: middle;
+  border-collapse: separate;
+  position: relative;
+  .btn-days {
+    padding: 6.5px 7px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+  }
+  .btn-days[disabled] {
+    background-color: #f6f6f6;
+    color: #ddd;
+    border: 1px solid #ddd;
+  }
+  
+  .input-text {
+    position: absolute;
+    right: 10px;
+  }
+  #inputControl-formErrorContent {
+    width: auto !important;
+    white-space: nowrap;
+  }
+}
+
+.input-room-number {
+  text-align: center;
+  width: 70px;
+  border: 1px solid #ddd;
+  input {
+    text-align: center;
+    height: 30px;
+    border-radius: 0;
+    border-right: 0;
+    border-left: 0;
+  }
+  input: hover {
+
+  }
+}
+
+.formError {
+  z-index: 5000;
+}
+
+.formErrorArrow {
+  z-index: 5000;
+}
+
+.formError .formErrorContent {
+  width: 126px;
+  background: #fff;
+  position: relative;
+  color: #ff3f1a;
+  line-height: 18px;
+  font-size: 12px;
+  border: 1px solid #d8d6d7;
+  padding: 5px 8px;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -o-border-radius: 3px;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+.formError .formErrorArrow {
+  position: absolute;
+  left: 20px;
+  top: 30px;
+  width: 14px;
+  border-width: 7px 7px 0;
+  bottom: -10px;
+  height: 0;
+  margin: 0;
+  border: 7px solid transparent;
+  border-top-color: #d8d6d7;
+
+  i {
+    top: -8px;
+    left: -7px;
+    position: absolute;
+    width: 0;
+    height: 0;
+    margin: 0;
+    border: 7px solid transparent;
+    border-top-color: #fff;
+  }
+}

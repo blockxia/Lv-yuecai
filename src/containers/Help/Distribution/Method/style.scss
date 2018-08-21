@@ -1,0 +1,25 @@
+.Introduction-content{
+  min-height: 800px;
+  padding-top: 30px;
+  padding-left: 170px;
+  font-family: "microsoft yahei";
+  color: #333;
+  .help-main-title{
+    width: 100%;
+    font-size: 16px;
+    border-bottom: 1px dashed #eaeaea;
+    margin-bottom: 25px;
+    padding-top: 0;
+    padding-bottom: 15px;
+  }
+  .help-content{
+    font-size: 14px;
+    line-height: 30px;
+  }
+  .help-title{
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 40px;
+    margin-top: 40px;
+  }
+}

@@ -1,0 +1,47 @@
+
+.permissionsNo-container {
+  /*margin: 120px 0 0 202px;*/
+  text-align: center;
+  color: #999999;
+  font-size: 18px;
+  padding-top: 200px;
+  width: 60%;
+  margin: auto;
+  background: #fff;
+  margin-top: 90px;
+  position: relative;
+  .permissionsNo-tips1 {
+    position: relative;
+    /*z-index: 10000;*/
+    z-index: 1;
+    background: #fff;
+    font-weight: bold;
+  }
+  .content {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    left: -17px;
+    top: 20px;
+    background: #fff;
+  }
+  p {
+  	font-size: 14px;
+    position: relative;
+    z-index: 100;
+    background: #fff;
+    text-align: left;
+  }
+  .cotent-tips1 {
+    font-size: 18px;
+  }
+  button {
+  	margin-left: 10px;
+  }
+  .i-icon {
+    font-size: 60px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+}

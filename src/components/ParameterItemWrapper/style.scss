@@ -1,0 +1,26 @@
+@import '../../stylesheet/common.scss';
+
+.parameter-wrapper {
+  .panel-title {
+    height: 16px;
+    line-height: 16px;
+    border-left: 4px solid $defaultColor;
+    margin-bottom: 10px;
+
+    label.title {
+      padding-left: 10px;
+      font-size: 16px;
+      color:$defaultColor;
+      cursor: text;
+    }
+  }
+
+  .parameter-item-wrapper {
+    display: flex;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+    button{
+      height: 36px;
+    }
+  }
+}

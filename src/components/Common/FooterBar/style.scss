@@ -1,0 +1,82 @@
+.footBar-content{
+  width: 62.5%;
+  min-width: 1200px;
+  height: 100%;
+  margin: auto;
+  padding: 20px 0;
+  .header-content{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-flow: row nowrap;
+    .header-sub{
+      display: flex;
+      flex-flow: row nowrap;
+      margin: 31px 0px;
+      img{
+        width: 38px;
+        height: 38px;
+        margin-right: 15px;
+      }
+      .header-title{
+        width: 100%;
+        height: 22px;
+        font-size: 16px;
+        color: #333;
+        line-height: 22px;
+      }
+      .header-tag{
+        width: 100%;
+        height: 16px;
+        font-size: 12px;
+        color: #aaa;
+        line-height: 16px;
+      }
+    }
+  }
+  .footer-nav{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    .nav-sub{
+      .nav-sub-title{
+        width: 100%;
+        height: 22px;
+        font-size: 16px;
+        line-height: 22px;
+        margin: 30px 0px;
+        color: #333;
+      }
+      .nav-sub-subTitle{
+        width: 80px;
+        height: 20px;
+        line-height: 20px;
+        font-size: 14px;
+        color: #aaa;
+        cursor: pointer;
+        margin: 15px 0px;
+      }
+    }
+  }
+  .footBar-tele{
+    width: 100%;
+    height: 20px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #333;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    span{
+      color: #aaa;
+      margin-left: 10px;
+    }
+  }
+  .footer-record{
+    height: 17px;
+    line-height: 17px;
+    color: #aaa;
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+}

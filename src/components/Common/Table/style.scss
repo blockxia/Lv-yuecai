@@ -1,0 +1,31 @@
+.ant-table-thead > tr > th{
+    padding: 9px 16px;
+    color:#666666;
+    background:rgba(235,235,235,1);
+    font-size:14px;
+    font-family: PingFangSC;
+    text-align: center;
+}
+.ant-table-tbody > tr:nth-child(even){
+    background:#F9F9F9;
+}
+.ant-table-tbody > tr > td{
+    border-bottom: none;
+    font-size: 12px;
+    color:#666666;
+    font-family: PingFangSC;
+    text-align: center;
+}
+.ant-table-tbody > tr:last-child > td{
+    border-bottom:1px solid #F4F4F4 !important;
+}
+.ant-table-thead > tr.ant-table-row-hover > td, .ant-table-tbody > tr.ant-table-row-hover > td, .ant-table-thead > tr:hover > td, .ant-table-tbody > tr:hover > td {
+    background:none;
+}
+.pagination{
+    padding-right:15px;
+    margin-top:15px;
+}
+.pagination ul{
+    float:right;
+}

@@ -1,0 +1,218 @@
+$height: 80px;
+$white: #fff;
+$primaryColor: #45B9B0;
+$commonColor: #04B894;
+
+@import "../../stylesheet/common";
+
+.avatar-container {
+  float: right;
+  display: inline-block;
+  /*margin-right: 15px;*/
+  .popover-img {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 44px;
+    height: 44px;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #fff;
+    border-radius: 100%;
+    cursor: pointer;
+  }
+}
+.ant-popover-inner-content {
+  color: #333;
+  padding: 0 !important;
+  .avatar-own {
+    padding: 10px 14px;
+    cursor: pointer;
+    text-align: left;
+    a {
+      color: #333;
+    }
+  }
+  .langName-highlight {
+    background: #ecf8f7;
+  }
+  .avatar-own:hover {
+    background: #ecf8f7;
+  }
+  
+  .anticon {
+    color: $defaultColor;
+    padding-left: 10px;
+  }
+  .langName {
+    cursor: pointer;
+    padding: 10px 20px;
+  }
+  .langName:hover {
+    background: rgb(236, 248, 247);
+  }
+}
+.ant-modal-title {
+  font-size: 16px;
+  color: #666;
+  text-align: center;
+}
+.serviceCenterInfo {
+  margin: 10px 10px 0 10px;
+  position: relative;
+  padding-bottom: 15px;
+  /*border-bottom: 1px solid #e9e9e9;*/
+  .serviceInfo {
+    display: inline-block;
+    li b {
+      margin-left: 5px;
+      font-size: 14px;
+    }
+  }
+  .weixin-scan {
+    display: inline-block;
+    margin-left: 30px;
+  }
+  .ant-modal-body {
+    padding: 20px;
+    p {
+      font-size: 12px;
+      color: #333;
+    }
+  }
+  li {
+    /*width: 200px;*/
+    height: 40px;
+    line-height: 40px;
+
+    .icon-weixin,
+    .icon-tel,
+    .icon-qq {
+      display: inline-block;
+      vertical-align: middle;
+      width: 18px;
+      height: 18px;
+      margin-right: 10px;
+    }
+    span,
+    b {
+      font-size: 12px;
+      color: #666;
+    }
+  }
+}
+.db-infos {
+  text-align: center;
+  clear: both;
+  border-top: 1px solid #e9e9e9;
+  h3 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #797979;
+    padding-top: 15px;
+  }
+  .no-db-info {
+    padding-top: 10px;
+    font-size: 12px;
+    color: #333;
+    li {
+      text-align: left;
+    }
+  }
+}
+.consultant-message {
+  img {
+    width: 13px !important;
+    height: 13px;
+    vertical-align: middle;
+    margin-right: 14px;
+  }
+}
+.ant-confirm-body {
+  text-align: center;
+  .ant-confirm-title {
+    font-size: 16px;
+  }
+  .anticon-info-circle:before {
+    content: '';
+  }
+  .ant-confirm-content {
+    text-align: left;
+  }
+}
+
+.ant-confirm .ant-confirm-btns {
+  float: initial;
+  text-align: center;
+  border-top: 1px solid #e9e9e9;
+  padding-top: 16px;
+}
+.ant-confirm .ant-modal-close {
+  display: block;
+}
+.ant-confirm-body .ant-confirm-content {
+  margin-left: 0;
+}
+.ml5 {
+  font-family: Arial;
+}
+.ant-btn-primary {
+  background: $defaultColor !important;
+  border: 1px solid $defaultColor !important;
+}
+.ant-btn-primary[disabled] {
+  background: #d9d9d9 !important;
+  border: 1px solid #d9d9d9 !important;
+}
+.ant-btn-primary[disabled]:hover {
+  background: #d9d9d9 !important;
+  border: 1px solid #d9d9d9 !important;
+}
+.ant-btn-primary:hover {
+  background: $defaultColor !important;
+  border: 1px solid $defaultColor !important;
+  color: #fff;
+}
+input:focus::-webkit-input-placeholder,textarea:focus::-webkit-input-placeholder{color:transparent;} 
+.avatar-own {
+  padding: 6px 14px !important;
+  cursor: pointer;
+  text-align: left;
+  a {
+    color: #333;
+  }
+  .ant-dropdown-menu-submenu-title {
+    padding: 0;
+  }
+  .ant-dropdown-menu-submenu-title:after {
+    right: 2px;
+  }
+}
+.ant-dropdown-menu {
+  .langName-highlight {
+    background: #ecf8f7;
+  }
+  .langName {
+    cursor: pointer;
+    padding: 10px 20px;
+    .anticon {
+      color: $defaultColor;
+      padding-left: 10px;
+    }
+  }
+  .avatar-own.ant-dropdown-menu-item-selected {
+    color: rgba(0, 0, 0, 0.65);
+    background: transparent;
+  }
+  .langName.ant-dropdown-menu-item-selected {
+    color: $defaultColor;
+  }
+  .langName:hover {
+    background: rgb(236, 248, 247);
+  }
+}
+.highlight-selected {
+  background: $selectedColor;
+}
+.avatar-own:hover {
+  background: #ecf8f7 !important;
+}

@@ -1,0 +1,73 @@
+.role-add-container {
+  .role-add-advice {
+    line-height: 25px;
+    background-color: #efefef;
+    border-radius: 4px;
+    padding: 5px 10px;
+    color: #999;
+    font-size: 12px;
+  }
+
+  .user-box {
+    height: 52px;
+    line-height: 52px;
+    position: relative;
+    border-radius: 4px;
+    padding-left: 4px;
+    font-size: 14px;
+    color: #666;
+    background: #EEF8F7;
+
+    span.user-info-item {
+      padding-right: 20px;
+    }
+
+    span.user-tile {
+      font-size: 16px;
+      padding-right: 20px;
+    }
+
+    
+  }
+
+  .role-list {
+    position: relative;
+    color: #666;
+    padding-left: 4px;
+    font-size: 14px;
+    
+    .user-tile {
+      padding: 20px 0 5px 0; 
+      font-size: 16px;
+
+    }
+
+    .user-tile-notes {
+      font-size: 12px;
+      color: #2E9E98;
+      padding-bottom: 20px; 
+    }
+
+    .ant-checkbox-group {
+      min-height: 30px;
+      max-height: 260px;
+      overflow: hidden;
+      overflow-y: auto;
+    }
+
+    .ant-checkbox-group-item {
+      display: inline-block;
+      width: 150px;
+      overflow: hidden;
+      text-overflow:ellipsis;
+      white-space: nowrap;
+    }
+  }
+}
+
+.role-sublimit {
+  margin-top: 22px;
+  border-top: 1px solid #efefef;
+  text-align: center;
+  padding-top: 20px;
+}

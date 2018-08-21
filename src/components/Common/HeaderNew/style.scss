@@ -1,0 +1,382 @@
+@import "../../../stylesheet/common";
+
+$height: 66px;
+$white: #fff;
+$primaryColor: $defaultColor;
+$commonColor: $defaultColor;
+$img: 28px;
+
+.color-danger, a.color-danger {
+  color: #f00;
+}
+
+.persional-header {
+  height: auto;
+  background-color: #fff;
+  z-index: 999;
+  min-width: 1200px;
+  width: 100%;
+  white-space: nowrap;
+  .lv-persional-header{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+  .first-container{
+    width: 100%;
+    background: #f8f8f8;
+  }
+  .first-line{
+    height: 35px;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    line-height: 17px;
+    margin: auto;
+    .title{
+      color: #AAAAAA;
+      width: 100px;
+      max-width: 100px;
+    }
+    .user-info-line{
+      color: #333;
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      .user-name{
+        display: inline-block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        max-width: 70px;
+      }
+    }
+    .menu-list{
+      padding-left: 30px;
+      .menu-btn{
+        display: inline-block;
+        margin-left: 30px;
+        .sup-title{
+          display: inline-block;
+          padding-left: 4px;
+          color: $defaultColor;
+        }
+      }
+    }
+    a {
+      color: #333;
+      &:hover{
+        color: $activeColor;
+      }
+    }
+  }
+  .search-line{
+    height: 142px;
+    display: flex;
+    align-items: center;
+    background: url(../../../images/yuecai_logo.png) no-repeat center center;
+    justify-content: flex-end;
+    .search-box{
+      width: 25%;
+      min-width: 200px;
+      display: flex;
+      flex-flow: column nowrap;
+      .persional-search{
+        position: relative;
+        .search-input-wrap{
+          border-bottom: 2px solid  #333;
+          input{
+            border: none;
+            &:focus{
+              border: none;
+              box-shadow: none;
+            }
+          }
+        }
+        .search-icon-btn{
+          position: absolute;
+          width: 24px;
+          height: 24px;
+          top: 50%;
+          right: 8px;
+          transform: translateY(-50%);
+          z-index: 2;
+          background: url(../../../images/search_x2.png) no-repeat center center;
+          background-color: #fff;
+        }
+      }
+      .hot-word{
+        font-size: 14px;
+        line-height: 20px;
+        padding: 2px 0;
+        display: flex;
+        flex-flow: row nowrap;
+        .hot-word-item{
+          display: inline-block;
+          margin-left: 10px;
+          color: #aaa;
+        }
+      }
+    }
+    .shopping-cart{
+      position: relative;
+      > a{
+        display: inline-block;
+        position: relative;
+        width: 24px;
+        height: 24px;
+        height: 24px;
+        margin: 0 20px 0 50px;
+        background: url(../../../images/shopping_cart_x2.png) no-repeat center center;
+        .count{
+          position: absolute;
+          display: inline-block;
+          top: -8px;
+          right: -8px;
+          background-color: red;
+          border-radius: 50%;
+          font-size: 12px;
+          line-height: 17px;
+          color: #fff;
+          width: 17px;
+          height: 17px;
+          text-align: center;
+        }
+      }
+    }
+  }
+  .affix-wrap{
+    width: 100%;
+    .affix-container{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      background: #fff;
+      position: relative;
+      .sub-menu{
+        position: absolute;
+        left: 0;
+        top: 58px;
+        width: 100%;
+        height: auto;
+        background: #fff;
+        .catlogs-list{
+          width: 62.5%;
+          min-width: 1200px;
+          display: flex;
+          flex-flow: row wrap;
+          margin: auto;
+          .catlogs2{
+            color: #333;
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 600;
+            padding-right: 20px;
+            &:hover{
+              color: $activeColor;
+            }
+          }
+          .sub-sub-menu{
+            display: flex;
+            flex-flow: column nowrap;
+            .catlogs3{
+              color: #333;
+              font-size: 14px;
+              line-height: 20px;
+              &:hover{
+                color: $activeColor;
+              }
+              margin-bottom: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .menu-line{
+    height: 60px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    background-color: #fff;
+    .small-logo{
+      width: 60px;
+      min-width: 60px;
+      height: 100%;
+      background: url(../../../images/yuecai_logo_x1.png) no-repeat center left;
+    }
+    .menu-list{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      a{
+        font-size: 14px;
+        line-height: 20px;
+        color: #333;
+        border: 2px solid #fff;
+        &:hover, &.active{
+          color: $activeColor;
+          border-bottom: 2px solid $activeColor;
+        }
+      }
+    }
+    .menu-right{
+      width: 200px;
+      min-width: 200px;
+      height: 100%;
+      text-align: right;
+      position: relative;
+      a{
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        margin: 20px;
+        &.search{
+          background: url(../../../images/search_x2.png) no-repeat center center;
+          background-size: 100% 100%;
+        }
+        &.mine{
+          background: url(../../../images/mine_x2.png) no-repeat center center;
+          background-size: 100% 100%;
+        }
+        &.cart{
+          background: url(../../../images/shopping_cart_x2.png) no-repeat center center;
+          background-size: 100% 100%;
+          position: relative;
+        }
+      }
+      .inline-search{
+        position: absolute;
+        width: 250px;
+        height: 33px;
+        top: 14px;
+        left: -250px;
+        display: flex;
+        justify-content: space-between;
+        background: #fff;
+        a{
+          margin: 6px 20px;
+          color: #333;
+          &:hover{
+            color: $activeColor;
+          }
+        }
+        .ant-input-search{
+          &.search-input-wrap{
+            border-bottom: 1px solid  #333;
+            input{
+              border: none;
+              &:focus{
+                border: none;
+                box-shadow: none;
+              }
+            }
+          }
+          .ant-input-suffix{
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  .padding-line{
+    // padding: 0 18.75%;
+    width: 62.5%;
+    min-width: 1200px;
+  }
+  .shopping-cart-list{
+    position: absolute;
+    width: 370px;
+    left: -300px;
+    top: 40px;
+    background: #fff;
+    border: 1px solid $activeColor;
+    z-index: 10;
+    padding: 32px 0 70px 20px;
+    .items-list{
+      height: 305px;
+      overflow-y: auto;
+      .line{
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 15px;
+        .item-img{
+          display: inline-block;
+          width: 68px;
+          min-width: 68px;
+          height: 68px;
+        }
+        .item-info{
+          width: 160px;
+          min-width: 160px;
+          padding: 0 10px;
+          display: flex;
+          flex-flow: column nowrap;
+          justify-content: space-around;
+          .first-line{
+            display: inline-block;
+            width: 140px;
+            max-width: 140px;
+            font-size: 14px;
+            line-height: 20px;
+            color: #333;
+          }
+          .second-line{
+            line-height: 17px;
+            font-size: 12px;
+            color: #aaa;
+          }
+        }
+        .item-price{
+          width: 100%;
+          color: $activeColor;
+          line-height: 20px;
+          font-size: 14px;
+        }
+        .btns{
+          width: 40px;
+          min-width: 40px;
+          align-self: center;
+            a{
+              color: $defaultColor;
+              &:hover{
+                color: $activeColor;
+              }
+            }
+        }
+      }
+    }
+    .total-line{
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 64px;
+      background: #fff6f2;
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      justify-content: space-between;
+      .total-count{
+        align-self: left;
+        padding-left: 20px;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-around;
+        span{
+          line-height: 20px;
+          font-size: 14px;
+        }
+        .second{
+          color: $activeColor;
+        }
+      }
+      .btns{
+        padding-right: 20px;
+      }
+    }
+  }
+}

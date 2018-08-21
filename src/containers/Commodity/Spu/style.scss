@@ -1,0 +1,10 @@
+@import '../../../stylesheet/common';
+.spu-content{
+    .line-btns{
+        padding: 15px 20px;
+        .btns{
+            color: $defaultColor;
+            margin-right: 20px;
+        }
+    }
+}

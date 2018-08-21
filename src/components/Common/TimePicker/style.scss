@@ -1,0 +1,13 @@
+@import '../../../stylesheet/common';
+
+.ant-time-picker-input, .ant-time-picker-panel-input {
+  border-radius: 3px;
+}
+
+.ant-time-picker-input:hover {
+  border: 1px solid $defaultColor;
+}
+
+.ant-time-picker-panel-select ul {
+  padding-bottom: 5px; 
+}

@@ -1,0 +1,17 @@
+.ConfirmModal {
+  // display: flex;
+  // display: -webkit-flex;
+  // justify-content: center;
+  // align-items: center;
+  // .ant-modal{
+    
+  // }
+  .ant-modal-footer {
+    border-top: none;
+    text-align: center;
+  }
+  .ant-modal-body {
+    text-align:center;
+    padding:30px 20px 20px 20px !important;
+  }
+}

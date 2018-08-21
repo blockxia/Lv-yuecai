@@ -1,0 +1,33 @@
+.country-code-warp-bat {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.select2-container--default .select2-selection--single {
+  background-color: #eee;
+  border: none;
+}
+
+.select2-container--focus,
+.select2-selection__rendered {
+  outline: none;
+}
+
+.select2-selection {
+  outline: none;
+}
+
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+  background-color: #ecf8f7 !important;
+  color:rgba(0, 0, 0, 0.65) !important;
+}
+
+
+.country-code-warp-bat.select2-dropdown {
+	width: 217px !important;
+}
+
+.select2-container--default .select2-search--dropdown .select2-search__field {
+  border: 1px solid #45b9b0;
+  outline: 0;
+}

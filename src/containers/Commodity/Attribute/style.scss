@@ -1,0 +1,9 @@
+@import '../../../stylesheet/common';
+.attribute-content{
+    .line-btns{
+        padding: 15px 20px;
+        .btns{
+            color: $defaultColor;
+        }
+    }
+}

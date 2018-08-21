@@ -1,0 +1,9 @@
+.batch-update-body{
+    table{
+        td{
+            .err.ant-input-number{
+                border: 1px solid red;
+            }
+        }
+    }
+}

@@ -1,0 +1,100 @@
+@import '../../../stylesheet/common';
+.spu-view-content{
+    .panel-title{
+        padding: 20px 0;
+        font-size: 20px;
+        line-height: 20px;
+        font-weight: 600;
+        .sub-title{
+            color: $defaultColor;
+            font-weight: normal;
+        }
+    }
+    .panel-info{
+        padding: 15px 20px;
+        .row{
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            justify-content: flex-start;
+            border: 1px solid #F4F4F4;
+            border-width: 1px 1px 0 1px;
+            &:last-child{
+                border-bottom-width: 1px;
+            }
+            .left, .right{
+                flex: 1;
+                display: flex;
+                flex-flow: row nowrap;
+                align-items: center;
+                justify-content: flex-start;
+            }
+            .title {
+                min-width: 150px;
+                background: #F9F9F9;
+                line-height: 39px;
+                text-align: center;
+            }
+            .content{
+                display: flex;
+                .line-item{
+                    display: inline-block;
+                    margin-left: 10px;
+                    &.large{
+                        .ant-row .ant-form-item-control-wrapper{
+                            width: 560px;
+                        }
+                    }
+                    .ant-row {
+                        display: flex;
+                        flex-flow: row nowrap;
+                        align-items: center;
+                        justify-content: center;
+                        margin-bottom: 0;
+                        .ant-form-item-control-wrapper{
+                            width: 180px;
+                            .ant-radio-group{
+                                display: flex;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .muti-table{
+            .row{
+                display: flex;
+                align-items: center;
+                .row-left{
+                    min-width: 120px;
+                    text-align: center;
+                }
+                .row-right{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .images-info, .description-info{
+        margin-top: 20px;
+        padding: 0 20px;
+        .title{
+            font-size: 20px;
+            font-weight: 600;
+            .sub-title{
+                font-weight: normal;
+                color: $defaultColor;
+            }
+        }
+        .images-list{
+            padding: 10px;
+            border: 1px solid #f4f4f4;
+            border-radius: 4px;
+            .iamge-item{
+                width: 120px;
+                height: 120px;
+                background-size: 100% 100%;
+            }
+        }
+    }
+}

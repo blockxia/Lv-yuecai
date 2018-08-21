@@ -1,0 +1,22 @@
+@import '../../../../stylesheet/common.scss';
+
+.brand-edit {
+  .logo-url {
+    width: 100px;
+    height: 100px;
+  }
+
+  .logo-upload-span {
+    display: inline-block;
+    border: 1px solid $defaultFontColor;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    span {
+      position: relative;
+      top: 50%;
+      display: inline-block;
+      transform: translateY(-50%);
+    }
+  }
+}

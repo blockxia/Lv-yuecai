@@ -1,0 +1,131 @@
+@import "./base/normalize.scss";
+@import "./base/font/iconfont.css";
+@import "./common";
+@import "./message/index.scss";
+
+#app {
+  height: 100%;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 997;
+  display: none;
+  float: left;
+  min-width: 160px;
+  //padding: 5px 0;
+  margin: 2px 0 0;
+  list-style: none;
+  font-size: 12px;
+  text-align: left;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 6px 12px rgba(0,0,0,0.125);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.125);
+  background-clip: padding-box;
+}
+
+.i-icon {
+  font-family: 'FontLVYUE'!important;
+  display: inline-block;
+  font-style: normal;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  vertical-align: initial;
+}
+
+.ant-modal-body {
+  padding: 16px !important;
+  font-size: 12px!important;
+  line-height: 1.5!important;
+}
+
+// 重写message样式
+.ant-message {
+  font-size: 14px !important;
+  font-family: $defaultFontFamily;
+
+  .ant-message-notice-content {
+    padding: 10px 15px;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    background: #fff;
+    display: inline-block;
+    pointer-events: all;
+    //border: 2px solid $defaultColor;
+
+    .anticon {
+      display: block;
+      font-size: 20px;
+      margin-bottom: 5px;
+      margin-right: 0;
+    }
+
+    span {
+      font-size: 14px !important;
+      color: #000000;
+    }
+
+    .ant-message-warning .anticon {
+      color: #d6753a;
+    }
+
+    .ant-message-error .anticon {
+      color: #e05454;
+    }
+
+    .ant-message-success .anticon {
+      //color: $defaultColor;
+    }
+  }
+}
+
+p {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+/*列表搜索条件开始*/
+.list-search-condition {
+  padding: 10px;
+
+  .condition-container {
+    display: flex;
+    flex-wrap: nowrap;
+
+    .condition-form {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+}
+/*列表搜索条件结束*/
+//搜索条件和列表之间的分割线
+.cut-off-line {
+  background: #f0f0f0;
+  height: 15px;
+  width: 100%;
+}
+//列表上方操作按钮
+.opt-container {
+  padding: 10px;
+  height: 30px;
+  line-height: 30px;
+  box-sizing: content-box !important;
+
+  .opt-right {
+    float: left;
+
+    a i {
+      margin-right: 5px;
+    }
+  }
+}
+.ant-modal-footer{
+  text-align: center !important;
+}

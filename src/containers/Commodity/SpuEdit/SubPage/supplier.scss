@@ -1,0 +1,117 @@
+@import '../../../../stylesheet/common';
+.supplier-update-page{
+    padding: 20px;
+    margin-bottom: 20px;
+    .supplier-list{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        height: 50px;
+        margin-bottom: 20px;
+        .title{
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 50px;
+            text-align:right;
+            padding-right:10px;
+            min-width:100px;
+            &.required:before{
+                display: inline-block;
+                margin-right: 4px;
+                content: "*";
+                font-family: SimSun;
+                line-height: 1;
+                font-size: 14px;
+                color: #f5222d;
+            }
+        }
+        .content-list{
+            width: 100%;
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            justify-content: flex-start;
+            height: 50px;
+            .choose-label{
+                padding: 8px 15px;
+                border-radius: 4px;
+                border: 1px solid #d5d5d5;
+                position: relative;
+                min-width:80px;
+                text-align: center;
+                cursor: pointer;
+                margin-right: 10px;
+                &.checked{
+                    border-color: $defaultColor;
+                    // background-color: $defaultColor;
+                    color: $defaultColor;
+                }
+                .name-line{
+                    font-size: 16px;
+                }
+                .under-btn{
+                    position: absolute;
+                    font-size: 12px;
+                    line-height: 12px;
+                    left: 0;
+                    bottom: 0;
+                    background-color: #666;
+                    color: #fff;
+                    width: 100%;
+                    display: none;
+                }
+                .inline-btn{
+                    position: absolute;
+                    right: 0px;
+                    top: 0;
+                    display: none;
+                }
+                &:hover{
+                    .under-btn, .inline-btn{
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+        .actions{
+            line-height: 50px;
+            min-width: 200px;
+            a{
+                padding: 0 20px;
+            }
+        }
+    }
+    table{
+        td{
+            .err.ant-input-number{
+                border: 1px solid red;
+            }
+            .inline-items{
+                .ant-input-number{
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+    .btn-line{
+        margin-top: 20px;
+        padding: 40px 0;
+        text-align: center;
+    }
+}
+.supplier-batch-update{
+    padding: 0 40px;
+    .ant-row{
+        display: flex;
+        margin-bottom: 0;
+        .ant-form-item-label{
+            width: 140px;
+        }
+        .ant-input-number{
+            width: 140px;
+            &.err{
+                border: 1px solid red;
+            }
+        }
+    }
+}

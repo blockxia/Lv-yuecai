@@ -1,0 +1,52 @@
+
+.add-employees-container .add-employees-advice{
+  color: #FF6565;
+  font-size: 12px;
+  width: 380px;
+  padding: 10px;
+  background: #EEF8F7;
+  margin: 0 auto;
+  border-radius: 5px;
+
+  .select2-container--default .select2-selection--single {
+    border-radius: 0px;
+  }
+
+  .has-error .ant-input-group-addon {
+    background-color: rgb(238, 238, 238);
+    border-radius: 0px;
+  }
+}
+
+.add-employees-container .error-msg-box{
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  
+  .employees-user-message {
+    span {
+      cursor: pointer;
+    }
+  }
+}
+
+.add-employees-container .phone-addon{
+  .ant-input-group-addon{
+    padding: 0;
+    min-width: 60px;
+    background-color: rgb(238, 238, 238);
+  }
+}
+
+.employees-error-message {
+  color: #FF6565!important;
+}
+
+.add-employees-container {
+  .ant-form-item-control {
+    text-align: center;
+  }
+  .ant-form-item-control.has-error {
+    text-align: left;
+  }
+}

@@ -1,0 +1,35 @@
+
+.pos-relative{
+  position: relative;
+  // padding:0 30px 0 30px;
+}
+.pos-relative label.before{
+  position: absolute;
+  left:5px; 
+}
+.pos-relative label.after{
+  position: absolute;
+  right:5px; 
+}
+.pl50{
+  padding-left:50px !important;
+}
+.pl35{
+  padding-left:35px !important;
+}
+.preferentialInput,.preferentialInput >span{
+  margin-left:5px;
+}
+.w100{
+  width:100px;
+}
+
+.w120{
+  width:120px;
+}
+.w140{
+  width:140px;
+}
+.validError{
+  border-color:red;
+}

@@ -1,0 +1,61 @@
+.commodity-category-body{
+    width: 100%;
+    padding: 0 20px;
+    .row{
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: flex-start;
+        .row-title{
+            width: 70px;
+            line-height: 39px;
+        }
+        .ant-row{
+            margin-bottom: 0;
+            &.name{
+                width: 130px;
+                margin-left: 10px;
+            }
+            &.input-name{
+                width: 230px;
+                margin-left: 10px;
+            }
+        }
+        .inline-form{
+            width: 70px;
+            margin: 0 5px;
+            .ant-input-number{
+                width: 70px;
+            }
+        }
+    }
+    .attribute-body{
+        .line-btns{
+            text-align: right;
+            .btns{
+                display: inline-block;
+                line-height: 30px;
+                padding: 10px;
+            }
+        }
+        table {
+            td{
+                .error{
+                    border-color: red;
+                }
+            }
+            th{
+                .required{
+                    &:before{
+                        display: inline-block;
+                        margin-right: 4px;
+                        content: "*";
+                        font-family: SimSun;
+                        line-height: 1;
+                        font-size: 14px;
+                        color: #f5222d;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,43 @@
+@import '../../../stylesheet/common';
+
+.ant-pagination-item:focus, .ant-pagination-item:hover {
+  transition: all .3s;
+  border-color: $defaultColor;
+}
+.ant-pagination-item:focus a, .ant-pagination-item:hover a {
+  color: $defaultColor;
+}
+.ant-pagination-item-active {
+  background-color: $defaultColor;
+  border-color: $defaultColor;
+}
+
+
+.ant-pagination-item-active:focus,
+.ant-pagination-item-active:hover {
+  background-color: $defaultColor;
+  border-color: $defaultColor;
+}
+
+.ant-pagination-item-active:focus a, .ant-pagination-item-active:hover a{
+  //background-color: $defaultColor;
+  border-color: $defaultColor;
+  color: #fff;
+}
+
+.ant-pagination-prev:focus .ant-pagination-item-link,
+.ant-pagination-next:focus .ant-pagination-item-link,
+.ant-pagination-prev:hover .ant-pagination-item-link,
+.ant-pagination-next:hover .ant-pagination-item-link {
+  border-color: $defaultColor;
+  color: $defaultColor;
+}
+
+li.ant-pagination-item-active {
+  background-color: $defaultColor;
+  color: $defaultColor;
+  border-color: $defaultColor;
+}
+.ant-pagination-item-active a{
+  color:#fff;
+}

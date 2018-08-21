@@ -1,0 +1,17 @@
+.personalProfile-content{
+    width: 60%;
+    padding-top: 60px;
+    margin:0 40px;
+    .at-cont{
+        width: 200px;
+    }
+    .login-content{
+        display: flex;
+        flex-flow: row nowrap;
+    }
+    .update-btn{
+        width: 87px;
+        height: 27px;
+        margin-left: 15%;
+    }
+}

@@ -1,0 +1,77 @@
+.input-sm {
+	height: 30px;
+  padding: 4px 10px;
+  font-size: 14px;
+  line-height: 1.428571429;
+  border-radius: 2px;
+}
+.w120 {
+  width: 120px!important;
+}
+.input-icon-calendar {
+  /*background: #fff url(http://simg1.qunarzz.com/crs/common/icon-calendar.png) 95% center no-repeat !important;*/
+}
+.arrow-icon:before {
+  content: "\e62a";
+}
+.ml5 {
+	margin-left: 5px;
+}
+.ml10 {
+  margin-left: 10px;
+}
+.assign-room-item {
+	.form-control {
+		display: inline-block;
+		vertical-align: middle;
+	}
+}
+
+.assignOrdersRooms-pop-content {
+  .calendar-ico {
+    position: absolute;
+    right: 2px;
+    top: -2px;
+    font-size: 20px;
+    color: #666;
+  }
+}
+.addNewOrderNoRoom-pop-content {
+  .calendar-ico {
+    position: absolute;
+    right: 2px;
+    top: -5px;
+    font-size: 20px;
+    color: #666;
+  }
+}
+.startTime-stay-con {
+  position: relative;
+  table {
+    margin-top: 0 !important;
+    border: 0 !important;
+  }
+}
+.endTime-stay-con {
+  position: relative;
+  table {
+    margin-top: 0 !important;
+    border: 0 !important;
+  }
+}
+.w135{
+  width: 135px !important;
+}
+.input-ss {
+  &::selection {
+    background: #fff; 
+    color: #666;
+}
+	height: 30px;
+  padding: 4px 0 4px 40px !important;
+  font-size: 14px;
+  line-height: 1.428571429;
+  background-image: none;
+  border: 1px solid #ddd;
+  font-size: 12px
+}

@@ -1,0 +1,40 @@
+.timeout-cell-dialog {
+  text-align: center;
+  white-space: nowrap;
+  .ant-modal-body{
+    text-align: center;
+    font-size: 14px!important;
+    height: 210px!important; 
+    padding-top: 110px!important; 
+
+    img {
+      width: 155px;
+      position: absolute;
+      top: -80px;
+      left: 110px;
+    }
+
+    button {
+      margin-top: 10px; 
+    }
+  }
+}
+
+.ant-modal-wrap.timeout-cell-dialog {
+  z-index:  10000 !important;
+}
+
+.timeout-cell-dialog:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  width: 0;
+}
+
+.timeout-cell-dialog .ant-modal {
+  display: inline-block;
+  vertical-align: middle;
+  top: 0;
+  text-align: left;
+}

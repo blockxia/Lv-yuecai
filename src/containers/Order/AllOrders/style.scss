@@ -1,0 +1,120 @@
+@import '../../../stylesheet/common.scss';
+
+.order-all-orders{
+  .double-row{
+    display: flex;
+    align-items: flex-start;
+    flex-flow: column nowrap;
+    padding-left: 5px;
+    span {
+        height: 20px;
+        font-size: 12px!important;
+        line-height: 20px;
+    }
+  }
+  .ant-table-wrapper .ant-table-thead > tr > th span {
+      font-size:12px !important;
+  }
+  // 查询
+  .orders-list-search {
+    padding: 0 10px;
+    .ft-gray-btn {
+      background: #F4F4F4 !important;
+      border: 1px solid #d9d9d9 !important;
+      color: #333333;
+    }
+    .ft-gray-btn:hover {
+      background: #F8F8F8 !important;
+      border: 1px solid #d9d9d9 !important;
+      color: #333333;
+    }
+  }
+  // 订单列表
+  .order-all-orders {
+    .order-all-list-container {
+      margin: 0 10px;
+      clear: both;
+      zoom: 1;
+      li {
+        // padding: 10px 20px;
+        border: 1px solid #DDDDDD;
+        margin-top: 20px;
+        clear: both;
+        zoom: 1;
+      }
+      a {
+        color: $defaultColor;
+        float: right;
+      }
+      .order-list-title {
+        background: #F4F4F4;
+        padding: 10px 20px;
+      }
+      .order-list-content {
+        padding: 20px;
+        clear: both;
+        zoom: 1;
+      }
+      .order-list-cooment {
+        padding: 10px 20px;
+        border-top: 1px solid #DDDDDD;
+      }
+      .order-list-commodityNames {
+        width: 580px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        display: inline-block;
+        vertical-align: middle;
+      }
+      .order-list-price {
+        color: $defaultColor;
+      }
+      .order-list-status {
+        float: right;
+        right: 36px;
+      }
+      .order-list-status-1 {
+        color: $defaultColor;
+      }
+      .ft-green-btn {
+        background: #49A2F5;
+        color: #fff;
+        float: right;
+        margin-top: -6px;
+      }
+      .ft-green-btn:disabled { 
+        background: #f5f5f5;
+        color: rgba(0, 0, 0, 0.25);
+      }
+      .ft-green-btn:hover {
+        background: #5CAEFA;
+      }
+    }
+    .ml20 {
+      margin-left: 20px;
+    }
+    .ml10 {
+      margin-left: 10px;
+    }
+    .order-list-footer {
+      float: right;
+      margin-top: 10px;
+      padding-right: 10px;
+    }
+    .order-all-list-nodata {
+      text-align: center;
+      margin-top: 160px;
+      img {
+        width: 260px;
+        height: 172px;
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
+.preview-img{
+  .ant-modal-footer{
+    display: none;
+  }
+}

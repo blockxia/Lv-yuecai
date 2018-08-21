@@ -1,0 +1,105 @@
+
+ @import '../../stylesheet/common.scss';
+ .search-content{
+     padding: 15px 30px;
+     min-height: 300px;
+     background: #fff;
+     position: relative;
+     margin-top: 80px;
+     .persional-bread{
+         position: absolute;
+         left: 0;
+         top: -60px;
+         .title-bread > span{
+             display: inline-block;
+             max-width: 155px;
+             white-space: nowrap;
+             overflow: hidden;
+             text-overflow: ellipsis;
+             vertical-align: bottom;
+         }
+     }
+     .search-list{
+         .search-item-line{
+             padding: 20px 0 20px 0;
+             display: flex;
+             align-items: center;
+             justify-content: flex-start;
+             border-bottom: 1px solid #f1f1f1;
+             .title{
+                 font-size: 14px;
+                 line-height: 20px;
+                 min-width: 50px;
+                 color: #999;
+             }
+             .content-line{
+                 a{
+                     margin: 0 10px 10px 0;
+                 }
+             }
+         }
+         a{
+             color: #333;
+             font-size: 14px;
+             line-height: 20px;
+             &:hover, &.active{
+                 color: $activeColor;
+             }
+             &.sort-item{
+                 padding-right: 14px;
+                 position: relative;
+                 .up-icon, .down-icon{
+                    display: inline-block;
+                    width: 10px;
+                    height: 8px;
+                    position: absolute;
+                    right: 0;
+                 }
+                 .up-icon{
+                     top: 2px;
+                     background: url(../../images/down_x3.png) no-repeat center top;
+                    //  background-size: 100% 100%;
+                 }
+                 .down-icon{
+                     bottom: 2px;
+                     background: url(../../images/up_x3.png) no-repeat center bottom;
+                    //  background-position-y: 5px;
+                 }
+                 &.up{
+                     .up-icon{
+                        background: url(../../images/up_x3.png) no-repeat center top;
+                     }
+                 }
+                 &.down{
+                    .down-icon{
+                       background: url(../../images/down_x3.png) no-repeat center bottom;
+                    }
+                 }
+             }
+         }
+         .total-count{
+             padding: 15px 0 30px 0;
+         }
+     }
+     .item-list{
+         display: flex;
+         flex-flow: row wrap;
+     }
+     .item-pagination{
+         text-align: right;
+     }
+     .no-search-data{
+         padding: 20px auto;
+         .no-data-img{
+             height: 200px;
+             background: url(../../images/no_invoices.png) no-repeat center center;
+         }
+         p{
+             text-align: center;
+         }
+     }
+ }
+
+
+
+

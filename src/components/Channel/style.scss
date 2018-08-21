@@ -1,0 +1,47 @@
+@import "../../stylesheet/common.scss";
+
+.Partner-item {
+  margin: 0 10px 10px 0;
+
+  .container {
+    width: 120px;
+    height: 30px;
+  }
+
+  .edit {
+    border: 1px solid $defaultColor;
+    position: relative;
+    height: 100%;
+
+    input {
+      border: none;
+      width: 118px;
+      padding: 5px;
+    } 
+
+    i {
+      position: absolute;
+      top: -17px;
+      right: -10px;
+      font-size: 20px;
+      color: red;
+    }
+  }
+
+  .show {
+    text-align: center;
+    position: relative;
+    height: 100%;
+    border-radius: 4px;
+    background-color: $defaultColor;
+    line-height: 30px;
+    color: #fff;
+
+    i {
+      position: absolute;
+      right: 5px;
+      font-size: 20px;
+      color: #fff;
+    }
+  }
+}

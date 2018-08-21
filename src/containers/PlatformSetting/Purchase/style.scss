@@ -1,0 +1,179 @@
+/**
+ * @authors wangchen
+ * @date    2018-07-17
+ * @module  采购端设置
+ */
+ @import '../../../stylesheet/common.scss';
+.purchase-content{
+    width: 100%;
+}
+.purchase-row{
+    .row{
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: flex-start;
+        .row-title{
+            width: 100px;
+            line-height: 39px;
+        }
+        .row-title-right{
+            width: 100px;
+            line-height: 39px;
+            text-align: right;
+        }
+        .ant-row{
+            margin-bottom: 0;
+        }
+        .name{
+            width: 250px;
+        }
+        .inline-form{
+            width: 70px;
+            margin: 0 5px;
+            .ant-input-number{
+                width: 70px;
+            }
+        }
+    }
+}
+
+.templet-content{
+    width: 100%;
+    .Popular-goods{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    .Popular-goods-left{
+        width: 350px;
+        height: 530px;
+        border: 1px solid $colorGray;
+        margin-left: 10px;
+        position: relative;
+        img{
+            width: 350px;
+            height: 70%;
+            border-bottom: 1px solid $colorGray;
+        }
+        .goods-name{
+            width: 100%;
+            height: 15%;
+            font-size: 20px;
+            font-weight: bold;
+            line-height: 80px;
+            text-align: center;
+
+        }
+        .goods-price{
+            width: 100%;
+            height: 15%;
+            display: flex;
+            flex-direction: row;
+        }
+        .new-price{
+            width: 50%;
+            height: 100%;
+            color: $colorRed;
+            font-size: 16px;
+            text-align: right;
+            line-height: 80px;
+        }
+        .old-price{
+            width: 50%;
+            height: 100%;
+            color: $colorGray;
+            font-size: 16px;
+            text-align: left;
+            line-height: 80px;
+            padding-left: 5px;
+            text-decoration:line-through;
+        }
+    }
+    .Popular-goods-content{
+        width: 100%;
+        height: 530px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left:15px;
+    }
+    .Popular-goods-right{
+        width: 200px;
+        height: 255px;
+        margin-right: 15px;
+        margin-bottom: 15px;
+        border: 1px solid $colorGray;
+        position: relative;
+        img{
+            width: 100%;
+            height: 70%;
+            border-bottom: 1px solid $colorGray;
+        }
+        .goods-name{
+            width: 100%;
+            height: 15%;
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 38px;
+            text-align: center;
+
+        }
+        .goods-price{
+            width: 100%;
+            height: 15%;
+            display: flex;
+            flex-direction: row;
+        }
+        .new-price{
+            width: 50%;
+            height: 100%;
+            color: $colorRed;
+            font-size: 12px;
+            text-align: right;
+            line-height: 38px;
+        }
+        .old-price{
+            width: 50%;
+            height: 100%;
+            color: $colorGray;
+            font-size: 12px;
+            text-align: left;
+            line-height: 38px;
+            padding-left: 5px;
+            text-decoration:line-through;
+        }
+    }
+    .goods-button{
+        position: absolute;
+        top:5px;
+        right: 5px;
+    }
+    .mid-goods-button{
+        position: absolute;
+        top:5px;
+        right: 25px;
+    }
+    .new-goods-mid{
+        width: 100%;
+        height:320px;
+        margin-top: 30px;
+        position: relative;
+        img{
+            width: 100%;
+        }
+    }
+    .new-goods-content{
+        width: 100%;
+        height: 530px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        // margin-left:15px;
+    }
+    .clearfix{
+        width: 300px;
+        margin-top: 20px;
+        zoom: 1;
+    }
+}

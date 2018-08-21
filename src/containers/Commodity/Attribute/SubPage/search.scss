@@ -1,0 +1,32 @@
+.attribute-search{
+    display: flex;
+    flex-flow: row nowrap;
+    padding-top: 20px;
+    .search-btns{
+        width: 200px;
+        min-width: 200px;
+        text-align: right;
+        button{
+            margin-right: 20px;
+        }
+    }
+    .search-items{
+        width: 100%;
+        .line-item{
+            display: inline-block;
+            vertical-align: top;
+            &.normal{
+                width: 140px;
+                margin-left: 10px;
+                &:first-child{
+                    margin-left: 20px;
+                }
+            }
+            .contractStartTime, .contractEndTime{
+                display: inline-block;
+                width: 150px;
+                margin-left: 10px;
+            }
+        }
+    }
+}

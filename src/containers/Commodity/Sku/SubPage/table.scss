@@ -1,0 +1,53 @@
+.spu-table{
+    .line-operation{
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .inline-with-btn{
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: space-between;
+        .link-btn{
+            margin-left: 10px;
+            width: 24px;
+            min-width: 24px;
+        }
+    }
+
+}
+.sup-formInput-content{
+    margin-left: 100px;
+    .row{
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: flex-start;
+        .row-title{
+            width: 90px;
+            line-height: 39px;
+        }
+        .row-content{
+            line-height: 39px;
+        }
+        .ant-row{
+            &.name{
+                width: 160px;
+            }
+            &.radio{
+                width: 200px;
+            }
+            &.input-form{
+                width: 50%;
+            }
+        }
+        .inline-form{
+            width: 70px;
+            margin: 0 5px;
+            .ant-input-number{
+                width: 70px;
+            }
+        }
+    }
+}

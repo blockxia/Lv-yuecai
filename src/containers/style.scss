@@ -1,0 +1,169 @@
+@import "../stylesheet/common";
+
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.setting {
+	background: #fff;
+}
+.ant-layout {
+	background: #f8f8f8;
+	.content-layout{
+		// background: #fff;
+		width: 62.5%;
+		min-width: 1200px;
+		margin: auto;
+		position: relative;
+	}
+}
+
+.main-content {
+	padding: 40px 15px 0 170px;
+	height: 100%;
+	width: 100%;
+	max-height: 2000px !important;
+	// position: fixed;
+	// background: #f0f0f0;
+  overflow: hidden;
+	overflow-y: auto;
+	&.no-slider{
+		padding: 0 15px;
+	}
+	.ant-layout-content {
+		background: #fff;
+		// margin-top: 80px;
+		border-radius: 4px;
+		min-width: 1000px; 
+
+	}
+
+
+
+	.ant-select-dropdown, .ant-calendar-picker-container {
+		z-index: 1045!important;
+	}
+
+  * {
+		font-size: 14px;
+		font-family: $defaultFontFamily;
+	}
+	
+	input, .ant-select-selection-selected-value {
+		font-size: 12px;
+	}
+}
+
+.main-content-no-slider {
+  padding-left: 15px!important;
+}
+
+.main-content-no-padding {
+  padding: 0!important;
+}
+
+.ant-modal-body {
+  * {
+    font-size: 14px;
+	}
+	
+	input {
+		font-size: 12px;
+	}
+}
+
+.comment-popover {
+  max-width: 200px;
+  .ant-popover-inner-content {
+    padding: 6px !important;
+    word-wrap:break-word;
+		word-break:break-all;
+		font-size: 12px;
+  }
+}
+
+.eslips-text-one {
+	display: -webkit-box!important;
+	-webkit-box-orient: vertical!important;
+	-webkit-line-clamp: 1!important;
+	overflow: hidden!important;
+}
+.eslips-text-two {
+	display: -webkit-box!important;
+	-webkit-box-orient: vertical!important;
+	-webkit-line-clamp: 2!important;
+	overflow: hidden!important;
+}
+
+.ant-table-wrapper{
+	.ant-table-tbody * {
+    font-size: 12px;
+	}
+	
+	.first-column {
+		text-align: left!important;
+		padding-left: 0!important; 
+	}
+
+	.first-column-2 {
+		text-align: left!important;
+		padding-left: 10px!important; 
+	}
+
+	.first-column-15 {
+		text-align: left!important;
+		padding-left: 15px!important; 
+	}
+
+	.align-left {
+		text-align: left!important;
+	}
+
+	.align-right {
+		text-align: right!important;
+	}
+
+	.ant-table-tbody tr>td {
+    text-align: center;
+    padding: 0 8px;
+    height: 50px;
+	}
+
+	.ant-table-thead>tr>th {
+		border: none;
+    background: #F9F9F9;
+		text-align: center;
+		color: #666;
+    padding: 0;
+    font-weight: 700;
+    min-width: 50px;
+    height: 40px;
+    line-height: 40px;
+		
+		span {
+			font-size: 14px!important;
+		}
+	}
+
+}
+
+input, textarea {
+	outline: none;
+}
+
+textarea {
+	resize: none;
+}
+
+.ant-modal-wrap, .ant-modal-mask {
+	z-index: 1050!important;
+}
+
+.ant-message, .ant-popover {
+	z-index: 1051!important;
+}
+
+.ant-select-selection__placeholder{
+	font-size: 12px;
+}

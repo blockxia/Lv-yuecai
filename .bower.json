@@ -1,0 +1,20 @@
+{
+  "name": "purchar_xpms",
+  "description": "项目脚手架",
+  "main": "index.js",
+  "authors": [
+    "tf.li"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "jquery": "1.10.2"
+  }
+}

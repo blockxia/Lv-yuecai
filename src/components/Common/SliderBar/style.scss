@@ -1,0 +1,168 @@
+@import "../../../stylesheet/common";
+$white: #888888;
+.nav {
+  height: 100%;
+  background-color: #fff;
+  width: 155px;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  //box-shadow: 0 0 3px #888;
+  box-sizing: border-box;
+  /*overflow-y: auto;*/
+  .ant-menu {
+    height: 100%;
+    overflow-y: auto;
+  }
+  .menu {
+    padding: 25px 0 300px 0;
+    background-color: #fcfcfc;
+    height: 100%;
+    overflow-y: auto;
+  }
+  ul.ant-menu-root li:first-child {
+    /*border-top: 4px solid #fff;*/
+  }
+  /*侧边栏样式 start*/
+  .ant-menu-dark,
+  .ant-menu-dark .ant-menu-inline.ant-menu-sub {
+    background: #fff;
+    //box-shadow: 0 2px 8px #888;
+    box-shadow: none;
+  }
+  .ant-menu-dark .ant-menu-submenu:hover,
+  .ant-menu-dark .ant-menu-submenu-title:hover,
+  .ant-menu-dark .ant-menu-item:hover,
+  .ant-menu-dark .ant-menu-item:active {
+    color: $activeColor;
+  }
+  .ant-menu-inline .ant-menu-submenu-title {
+    color: $white;
+  }
+  .ant-menu-dark .ant-menu-item > a {
+    color: $white;
+  }
+  .ant-menu-dark .ant-menu-item > a:hover {
+    color: $activeColor;
+  }
+
+  .ant-menu.ant-menu-dark .ant-menu-item {
+    .third {
+      vertical-align: inherit;
+    }
+
+    .third:before {
+      content: "\e650";
+      font-size: 12px;
+    }
+  }
+
+  .ant-menu.ant-menu-dark .ant-menu-item-selected {
+    /*background-color: #ecf8f7;*/
+    background-color: #fff;
+    .i-icon, .sub-name {
+      /*color: #45b9b0;*/
+      color: $defaultColor;
+    }
+    a:before {
+      border-bottom: none;
+    }
+
+    .third {
+      vertical-align: inherit;
+    }
+
+    .third:before {
+      content: "\e64f";
+      font-size: 12px;
+    }
+  }
+  .sliderBar {
+    position: relative;
+    z-index: 0;
+    height: 100%;
+    background-color: $white;
+  }
+  .sub-logo {
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .sub-name {
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 12px;
+    font-size: 14px;
+  }
+  .right-header {
+    background: $activeColor;
+  }
+  .ant-menu-submenu-inline > .ant-menu-submenu-title:after {
+    -webkit-transform: rotate(270deg) scale(.75);
+    transform: rotate(270deg) scale(.75);
+  }
+  .ant-menu-submenu-open.ant-menu-submenu-inline>.ant-menu-submenu-title:after {
+    -webkit-transform: rotate(0deg) scale(.75);
+    transform: rotate(0deg) scale(.75);
+  }
+  .ant-menu-submenu:after {
+    content: '';
+    display: block;
+    width: 162px;
+    text-align: center;
+    margin: auto;
+  }
+  ul li:last-child {
+    &:after {
+      border: none;
+    }
+    .ant-menu-item > a:before {
+      border-bottom: none;
+    }
+  }
+  .ant-menu-item > a:before {
+    width: 162px;
+    margin: auto;
+  }
+  .ant-menu-inline .ant-menu-item,
+  .ant-menu-submenu-title {
+    height: 36px !important;
+    line-height: 36px !important;
+  }
+  ul li ul.ant-menu .sub-name {
+    font-size: 12px;
+    vertical-align: inherit;
+  }
+  ul li ul.ant-menu a:before{
+    border: none;
+  }
+  ul li ul.ant-menu li.ant-menu-item {
+    height: 30px !important;
+    line-height: 30px !important;
+  }
+  .i-icon {
+    font-size: 14px;
+    vertical-align: middle;
+  }
+  .ant-menu-submenu-inline > .ant-menu-submenu-title:after {
+    content: '';
+  }
+
+  .operate-slider-count {
+    margin-left: 2px;
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: 35px;
+    height: 14px;
+    line-height: 14px;
+    padding: 0 5px;
+    background: red;
+    color: #fff;
+    border-radius: 8px;
+    font-size: 11px;
+  }
+}

@@ -1,0 +1,166 @@
+@import "../../../stylesheet/common";
+$height: 66px;
+/*顶部导航*/
+.staticHeader {
+  position: fixed;
+  height: $height;
+  line-height: $height;
+  top: 0;
+  z-index: 999;
+  overflow: hidden;
+  width: 100%;
+  background: $defaultColor;
+  box-shadow: 0 2px 8px #888;
+  top: 0;
+  left: 0;
+  right: 0;
+  min-width: 1200px;
+  width: 100%;
+  white-space: nowrap;
+  .logo {
+    float: left;
+    height: 66px;
+    padding-left: 15px;
+  }
+  .header-logo {
+    display: inline-block;
+    background-size: 100% 100%;
+    position: absolute;
+    width: 60px;
+    height: 24px;
+    z-index: 100;
+    top: 46%;
+    transform: translateY(-50%);
+  }
+
+  .hotel-info {
+    float: left;
+    height: 66px;
+    margin-left: 68px;
+
+    .staticHeader-logo-txt {
+      vertical-align: middle;
+      color: #fff;
+      position: relative;
+      font-size: 16px;
+    }
+  }
+  .ant-dropdown-trigger {
+    position: relative;
+    i {
+      margin-left: 10px;
+    }
+  }
+  .ant-dropdown-link {
+    margin-left: 150px;
+    color: #fff;
+    font-size: 14px;
+    position: relative;
+    z-index: 1;
+    span {
+      max-width: 160px;
+      text-overflow: ellipsis;
+      display: inline-block;
+      vertical-align: middle;
+      overflow: hidden;
+    }
+  }
+  .staticHeader-logo {
+    padding-left: 15px;
+    display: inline-block;
+    div {
+      display: inline-block;
+    }
+    img {
+      /*height: 40px;*/
+      width: 120px;
+      height: 35px;
+      line-height: 66px;
+      vertical-align: middle;
+      cursor: default;
+    }
+  }
+
+  .popover-img {
+    width: 46px;
+    height: 46px;
+  }
+
+  .fn-right {
+    float: right;
+  }
+
+  .other-background {
+    float: left;
+    background: rgba(255,255,255,0.2);
+    padding-left: 13px;
+  }
+
+  .i-icon-link {
+    color: #fff;
+    font-size: 20px;
+  }
+
+  .i-icon-link:hover {
+    color:rgba(255,255,255,0.6);
+    cursor: pointer;
+  }
+
+  .link {
+    float: left;
+    position: relative;
+    height: 66px;
+    line-height: 66px;
+    padding: 0 5px;
+    margin-right: 10px;
+  }
+
+  .account {
+    float: left;
+    height: 66px;
+    padding: 0 15px 0 9px;
+  }
+}
+
+/*左侧导航*/
+.staticHeader-side-left {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 20%;
+  background: #fff;
+  border-right: 1px solid #e2e2e2;
+  height: 100%;
+  background: #efefef;
+}
+
+/*右侧导航*/
+.staticHeader-side-right {
+  width: 20%;
+  height: 100%;
+  background: #efefef;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+/*清除浮动*/
+.fn-clear {
+  zoom: 1;
+}
+
+.fn-clear:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.staticHeader-dropdownList {
+  max-height: 400px;
+  max-width: 160px;
+  overflow: auto;
+  top: 10px;
+}

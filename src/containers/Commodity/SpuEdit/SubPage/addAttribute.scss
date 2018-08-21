@@ -1,0 +1,16 @@
+.add-attribute-list{
+    .search-box{
+        display: flex;
+        align-items: center;
+        .ant-row{
+            display: flex;
+            margin-bottom: 0;
+        }
+    }
+    .btn-line{
+        .btns{
+            display: inline-block;
+            padding: 15px 20px;
+        }
+    }
+}

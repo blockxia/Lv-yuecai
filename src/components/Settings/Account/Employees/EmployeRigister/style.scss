@@ -1,0 +1,13 @@
+.register-employees-container .error-msg-box{
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  cursor: pointer;
+}
+
+.register-employees-container .phone-addon{
+  .ant-input-group-addon{
+    padding: 0;
+    min-width: 60px;
+  }
+}

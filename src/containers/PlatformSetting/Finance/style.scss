@@ -1,0 +1,74 @@
+.account-update-body{
+    .row{
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: flex-start;
+        .row-title{
+            line-height: 39px;
+            &.required{
+                &:before{
+                    content: '*';
+                    margin-right: 5px;
+                    color: red;
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+            }
+        }
+        & > span {
+            margin-right: 10px;
+            min-width: 70px;
+        }
+        .ant-row{
+            margin-bottom: 0;
+            width: 200px;
+        }
+    }
+}
+.invoice-update-body{
+    .row{
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: flex-start;
+        .row-title{
+            line-height: 39px;
+            &.required{
+                &:before{
+                    content: '*';
+                    margin-right: 5px;
+                    color: red;
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+            }
+        }
+        & > span {
+            margin-right: 10px;
+            min-width: 100px;
+        }
+        .ant-row{
+            margin-bottom: 0;
+            width: 200px;
+        }
+    }
+}
+.bank-account-page{
+    .account-line{
+        line-height: 35px;
+        .info-line{
+            .right{
+                .default-sign{
+                    margin-left: 20px;
+                    display: inline-block;
+                    padding: 5px 10px;
+                    background: orange;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+
+
+

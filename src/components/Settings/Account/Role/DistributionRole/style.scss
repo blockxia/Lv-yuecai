@@ -1,0 +1,180 @@
+.distribution-container .distribution-warpper{
+  height: 400px;
+  overflow-y: scroll;
+}
+.distribution-container ul.checktree,ul.checktree * {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 16px 16px 0;
+}
+
+.distribution-container ul.checktree img.arrow {
+  padding: 2px 0 0 0;
+  border: 0;
+  width: 20px;
+}
+
+.distribution-container ul.checktree li {
+  margin-top: 5px;
+  padding: 0px;
+}
+
+.distribution-container ul.checktree li ul {
+  padding: 0 0 0 20px;
+  margin: 0;
+}
+
+.distribution-container ul.checktree label {
+  cursor: pointer;
+  vertical-align: middle;
+  font-size: 12px;
+  padding: 2px 0;
+  color:#666;
+}
+
+.distribution-container ul.checktree label.hover {
+  color: #666;
+}
+
+.distribution-container ul {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.distribution-container ul.checktree li .arrow {
+  width: 16px;
+  height: 16px;
+  padding: 0 0 2px;
+  margin: 0px;
+  cursor: pointer;
+  float: left;
+  background: transparent no-repeat 0 4px;
+}
+
+.distribution-container ul.checktree li .collapsed {
+  background-image: url(../../../../../images/ui-icons_217bc0_256x240.png);
+  background-position: -16px -128px;
+}
+
+.distribution-container ul.checktree li .expanded {
+  background-image: url(../../../../../images/ui-icons_217bc0_256x240.png);
+  background-position: -48px -128px;
+}
+
+.distribution-container ul.checktree li .checkbox {
+  width: 18px;
+  height: 18px;
+  padding: 0;
+  margin: 2px 0 0 0;
+  cursor: pointer;
+  float: left;
+  vertical-align: middle;
+  background: url(../../../../../images/checktree/check0.png) no-repeat 0 0px;
+}
+
+.distribution-container ul.checktree li .checked {
+  background-image: url(../../../../../images/checktree/check2.png);
+}
+
+.distribution-container ul.checktree li .half_checked {
+  background-image: url(../../../../../images/checktree/check1.gif);
+}
+
+.distribution-container .checkbox-wrap-group li{
+  float: left;
+}
+.distribution-container .checkbox-wrap{
+  background-color: #F9F9F9;
+  border-radius: 4px;
+  padding-top: 5px !important;
+  padding-bottom: 10px !important;
+}
+
+
+
+
+
+
+// 标题
+.distribution-container .title{
+  height: 35px;
+  line-height: 35px;
+  background-color: #efefef;
+  color: #999999;
+  font-size: 12px;
+  padding-left: 20px
+}
+
+.distribution-container .user-box{
+  height: 52px;
+  line-height: 52px;
+  position: relative;
+  color: #666;
+  font-size: 14px;
+  padding-left: 15px;
+  background: #EEF8F7;
+  span {
+    padding-right: 20px; 
+  }
+
+  .user-tile {
+    font-size: 16px;
+  }
+
+  // .user-tile{
+  //   position: absolute;
+  //   left: 10px;
+  //   top:-30px;
+  //   height: 30px;
+  //   width: 100px;
+  //   text-align: center;
+  //   line-height: 30px;
+  //   border: 1px dashed #a2dcd7;
+  //   border-top-left-radius: 5px;
+  //   border-top-right-radius: 5px;
+  //   border-bottom: none;
+  //   background-color: #efefef;
+  // }
+}
+
+
+.distribution-container .checktree-wrapper{
+  margin-top: 20px;
+  //border: 1px dashed #a2dcd7;
+  //border-radius: 5px;
+  position: relative;
+  color: #666;
+  padding-left: 15px;
+
+  .tree-tile{
+    font-size: 16px;
+  }
+
+  span {
+    font-size: 12px;
+    color:#2E9E98;
+    padding-left: 20px; 
+  }
+  
+  // height: 450px;
+  // .tree-tile{
+  //   font-size: 14px;
+  //   border-top-left-radius: 5px;
+  //   border-top-right-radius: 5px;
+  //   position: absolute;
+  //   top: -30px;
+  //   left:10px;
+  //   height: 30px;
+  //   line-height: 30px;
+  //   text-align: center;
+  //   width: 100px;
+  //   border: 1px dashed #a2dcd7;
+  //   border-bottom: none;
+  //   background-color: #efefef;
+  // }
+}
+
+.distribution-container .save_bt_sublimt{
+  text-align: center;
+  padding-top: 10px;
+}

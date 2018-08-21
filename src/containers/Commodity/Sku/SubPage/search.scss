@@ -1,0 +1,32 @@
+.spu-search{
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 15px 20px 20px;
+    .search-btns{
+        width: 200px;
+        min-width: 200px;
+        text-align: right;
+        button{
+            margin-right: 20px;
+        }
+    }
+    .ant-form-item{
+        margin-bottom: 0px;
+    }
+    .search-items{
+        width: 100%;
+        .line-item{
+            display: inline-block;
+            vertical-align: top;
+            &.normal{
+                width: 140px;
+                margin-left: 10px;
+            }
+            .contractStartTime, .contractEndTime{
+                display: inline-block;
+                width: 150px;
+                margin-left: 10px;
+            }
+        }
+    }
+}

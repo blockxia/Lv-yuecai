@@ -1,0 +1,30 @@
+@import '../../../stylesheet/common.scss';
+.ant-tabs-nav-container {
+  padding-left: 20px;
+
+  .ant-tabs-ink-bar {
+    height: 2px;
+    background-color: $defaultColor;
+  }
+  
+  .ant-tabs-nav {
+    height: 50px;
+    line-height: 34px;
+  }
+  
+  .ant-tabs-nav .ant-tabs-tab-active {
+    color: $activeColor;
+  }
+  
+  .ant-tabs-nav .ant-tabs-tab:hover {
+    color: $activeColor;
+  }
+  .ant-tabs-nav .ant-tabs-tab:active {
+    color: $activeColor;
+  }
+  
+}
+
+.ant-tabs-bar {
+  border-bottom: 1px solid #F4F4F4;
+}

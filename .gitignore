@@ -1,0 +1,12 @@
+logs
+*.log
+.grunt
+## dist
+node_modules
+bower_components
+build
+##static
+.DS_Store
+.idea
+*/setting.json
+.eslintrc.js

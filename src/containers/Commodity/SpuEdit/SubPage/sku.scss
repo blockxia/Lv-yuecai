@@ -1,0 +1,47 @@
+@import '../../../../stylesheet/common';
+.sku-update-page{
+    padding: 20px;
+    .sku-title{
+        display: flex;
+        justify-content: space-between;
+        line-height: 39px;
+        .title{
+            font-size: 20px;
+            font-weight: 600;
+            .sub-title{
+                color: $defaultColor;
+                font-weight: normal;
+            }
+        }
+        .actions{
+            a{
+                padding: 0 20px;
+            }
+        }
+    }
+    .muti-table{
+        .row{
+            display: flex;
+            align-items: center;
+            .row-left{
+                min-width: 120px;
+                text-align: center;
+            }
+            .row-right{
+                width: 100%;
+            }
+        }
+    }
+    table{
+        td{
+            .err.ant-input-number{
+                border: 1px solid red;
+            }
+        }
+    }
+    .btn-line{
+        margin-top: 20px;
+        padding: 40px 0;
+        text-align: center;
+    }
+}
